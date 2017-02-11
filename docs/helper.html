@@ -1,0 +1,80 @@
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Helper
+        </h1>
+        <ol class="breadcrumb">
+            <li>
+                <i class="fa fa-dashboard"></i>  <a href="#/">Home</a>
+            </li>
+            <li class="active">
+                <i class="fa fa-edit"></i> Helper guide
+            </li>
+        </ol>
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-12">
+            
+            	<div class="col-sm-6">
+            	
+                    <h3>Create Helper</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Create Helper</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>The helper file should be like test_helper.php, so that can set to any controller. </p><br />
+                            <strong class="label label-danger">test_helper.php</strong><br /><br />
+<div class="code">&lt;?php
+<c>function</c> test(){
+}
+?>            
+</div>
+                        </div>
+                    </div>
+            	
+                </div>
+                                
+               <div class="col-sm-6">
+            	
+                    <h3>Set Helper And Accessing Methods</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Accessing Helper Methods</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>The view file should be in .phtml extension. so that set to controller without path & extension see below. </p><br />
+                            <strong class="label label-danger">testController.php</strong><br /><br />
+<div class="code">&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt; &lt;=$title?&gt; &lt;/head&gt;
+&lt;body&gt; 
+&lt;?php
+<k>$this</k>-><c>setHelper</c>('test'); // test_helper
+<c>function_name</c>();
+?>
+&lt;/body&gt;
+&lt;/html&gt;             
+</div>
+                        </div>
+                    </div>
+            	
+                </div>
+             
+             
+        
+    </div>
+    
+</div>
+<!-- /.row -->
+<script>
+	$(document).ready(function(e){
+			var rContents = $("#page-wrapper").html().replace( /\$this/g, '<span class="this">$this</span>').replace( /setHtml/g, '<span class="func">setHtml</span>');
+			$("#page-wrapper").html( rContents );
+	});
+
+</script>
+

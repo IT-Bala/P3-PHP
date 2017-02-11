@@ -1,0 +1,105 @@
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Controller
+        </h1>
+        <ol class="breadcrumb">
+            <li>
+                <i class="fa fa-dashboard"></i>  <a href="#/">Home</a>
+            </li>
+            <li class="active">
+                <i class="fa fa-edit"></i> Controller guide
+            </li>
+        </ol>
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-12">
+            
+            	<div class="col-sm-4">
+            	
+                    <h3>Create Controller</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Create controller</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Controller class name should be file name and also must extends class WLT_Controller. If you want access parent methods you shoud call parent construct.</p>
+                            <strong class="label label-danger">defaultController.php</strong><br /><br />
+<div class="code">&lt;?php 
+<k>defaultController</k> extends <k>WLT_Controller</k> {
+	<k>public</k> <c>function</c> __construct() {
+		<k>parent</k>::__construct();
+	}
+}
+?&gt;               
+</div>
+                        </div>
+                    </div>
+            	
+                </div>
+                <div class="col-sm-4">
+            	
+                    <h3>Set model</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Set model</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Controller class name should be file name and also must extends class WLT_Controller. If you want access parent methods you shoud call parent construct.</p>
+                            <strong class="label label-danger">defaultController.php</strong><br /><br />
+<div class="code">&lt;?php 
+<k>defaultController</k> extends <k>WLT_Controller</k> {
+	<k>public</k> <c>function</c> aboutus() {
+		$model = <c>$this</c>-><c>setModel</c>('dataModel');
+		$model-><c>doInsert</c>();
+	}
+}
+?&gt;               
+</div>
+                        </div>
+                    </div>
+            	
+                </div>
+                
+                <div class="col-sm-4">
+            	
+                    <h3>Set view</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Basic view</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Controller class name should be file name and also must extends class WLT_Controller. If you want access parent methods you shoud call parent construct.</p>
+                            <strong class="label label-danger">defaultController.php</strong><br /><br />
+<div class="code">&lt;?php 
+<k>defaultController</k> extends <k>WLT_Controller</k> {
+	<k>public</k> <c>function</c> aboutus() {
+		$data['title'] = "Welcome to 3p";
+		$this-><c>setHtml</c>('header',$data);
+	}
+}
+?&gt;               
+</div>
+                        </div>
+                    </div>
+            	
+                </div>
+             
+             
+        
+    </div>
+    
+</div>
+<!-- /.row -->
+<script>
+	$(document).ready(function(e){
+			var rContents = $("#page-wrapper").html().replace( /\$this/g, '<span class="this">$this</span>').replace( /setHtml/g, '<span class="func">setHtml</span>');
+			$("#page-wrapper").html( rContents );
+	});
+
+</script>
+

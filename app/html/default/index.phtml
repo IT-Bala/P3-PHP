@@ -1,0 +1,21 @@
+<?php print_r($products); ?>
+<table width="800" align="center"> 
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Action</th>
+    </tr>
+    <?php foreach($users as $data){ ?>
+    <tr>
+        <td><?=$data->first_name?></td>
+        <td><?=$data->last_name?></td>
+        <td><?=$data->username?></td>
+        <td><?=$data->email?></td>
+        <td><?=$data->phone?></td>
+        <td><a href="?edit=<?=$data->user_id?>">Edit</a>&nbsp;<a href="?delete=<?=$data->user_id?>">Delete</a></td>
+    </tr>
+    <?php }?>
+</table>

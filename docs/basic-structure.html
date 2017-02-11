@@ -1,0 +1,153 @@
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Basics
+        </h1>
+        <ol class="breadcrumb">
+            <li>
+                <i class="fa fa-dashboard"></i>  <a href="#/">Home</a>
+            </li>
+            <li class="active">
+                <i class="fa fa-edit"></i> Basics Of Structure
+            </li>
+        </ol>
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-12">
+            
+            	<div class="col-sm-4">
+            	
+                    <h3>Controller:</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Basic controller</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Controller class name should be file name and also must extends class WLT_Controller. If you want access parent methods you shoud call parent construct.</p>
+                            <strong class="label label-danger">defaultController.php</strong><br /><br />
+<div class="code">&lt;?php 
+<c>defaultController</c> extends <c>WLT_Controller</c> {
+}
+?&gt;               
+</div>
+                        </div>
+                    </div>
+            	
+                </div>
+                <div class="col-sm-4">
+            	
+                    <h3>Model:</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Basic model</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Model class name should be file name and also must extends class WLT_Model.</p><br />
+                            <strong class="label label-danger">dataModel.php</strong><br /><br />
+<div class="code">&lt;?php
+<c>dataModel</c> extends <c>WLT_Model</c> {
+}     
+?&gt;               
+</div>
+                        </div>
+                    </div>
+            	
+                </div>
+                
+                <div class="col-sm-4">
+            	
+                    <h3>View:</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Basic view</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>The view file should be in .phtml extension. so that set to controller without path & extension see below. </p><br />
+                            <strong class="label label-danger">header.phtml</strong><br /><br />
+<div class="code">&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt; &lt;=$title?&gt; &lt;/head&gt;
+&lt;body&gt; &lt;/body&gt;
+&lt;/html&gt;             
+</div>
+                        </div>
+                    </div>
+            	
+                </div>
+             
+             
+        <div class="col-sm-4">    
+			<h3>Folder structure</h3>        
+        
+            <div class="text-danger">
+            
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul id="tree1">                        
+                            <li><strong>Project Folder</strong>
+                                <ul>
+                                    <li><strong>3p</strong></li>
+                                    <li><strong>app</strong>
+                                        <ul>
+                                            <li>cache</li>
+                                            <li>config</li>
+                                            <li>controller</li>
+                                            <li>factory</li>
+                                            <li>html
+                                                <ul>
+                                                    <li><strong>default</strong>
+                                                        <ul>
+                                                            <li>css
+                                                                <ul>
+                                                                    <li>style.css</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>js
+                                                                <ul>
+                                                                    <li>script.js</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>images
+                                                                <ul>
+                                                                    <li>logo.png</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>section
+                                                                <ul>
+                                                                    <li>header.phtml</li>
+                                                                    <li>footer.phtml</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>index.phtml</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong>p3-php</strong></li>
+                                                </ul>
+                                            </li>
+                                            <li>model</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>docs</strong></li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+		</div>
+    </div>
+    
+</div>
+<!-- /.row -->
+<script>
+	$(document).ready(function(e){
+			var rContents = $("#page-wrapper").html().replace( /\$this/g, '<span class="this">$this</span>').replace( /setHtml/g, '<span class="func">setHtml</span>');
+			$("#page-wrapper").html( rContents );
+	});
+
+</script>
+

@@ -1,0 +1,11 @@
+3p/setting/setting/settingAction.php { WLT_Controller }
+
+3p/setting/setting/settingModel.php  {    WLT_Model   }
+
+WLT_Controller extends settingError
+
+WLT_Model extends WLT_Controller
+
+=============================================
+
+get,post,request worked on mainController.php

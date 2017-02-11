@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine on
+    RewriteCond %{REQUEST_METHOD} ^TRAC[EK]
+    RewriteRule .* - [L,R=405]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteRule (.*)$ index.php/$1
+# IF YOU WANT TO BLOCK ALL THE PAGES EXCEPT index.php Enable Below Line
+#   RewriteRule .* index.php [L]
+# IF YOU WANT TO BLOCK ALL THE PAGES EXCEPT index.php Enable Above Line
+	Options -Indexes
+
+</IfModule>
+<IfModule mod_php5.c>
+php_value short_open_tag 1
+php_flag allow_url_include 1
+</IfModule>

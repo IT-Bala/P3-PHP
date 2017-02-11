@@ -1,0 +1,6 @@
+Need to implement:
+
+i. in between routes and file set defaulTheme variable  ==> from DB
+
+2. dll implementation without too load using cache encoding format
+

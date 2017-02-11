@@ -1,0 +1,83 @@
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Model
+        </h1>
+        <ol class="breadcrumb">
+            <li>
+                <i class="fa fa-dashboard"></i>  <a href="#/">Home</a>
+            </li>
+            <li class="active">
+                <i class="fa fa-edit"></i> Model guide
+            </li>
+        </ol>
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-12">
+            
+            	<div class="col-sm-6">
+            	
+                    <h3>Create Model</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Create model</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Model class name should be file name and also must extends class WLT_Model.</p><br />
+                            <strong class="label label-danger">dataModel.php</strong><br /><br />
+<div class="code">&lt;?php 
+<k>dataModel</k> extends <k>WLT_Model</k> {
+	<k>public</k> <c>function</c> doInsert() {
+		<k>$this</k>-><c>setDatabase</c>();
+		<w>/* database connectivity */</w>
+	}
+}
+?&gt;               
+</div>
+                        </div>
+                    </div>
+            	
+                </div>
+                                
+                <div class="col-sm-6">
+            	
+                    <h3>Set data</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Send data</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Model class name should be file name and also must extends class WLT_Model.</p><br />
+                            <strong class="label label-danger">dataModel.php</strong><br /><br />
+<div class="code">&lt;?php 
+<k>dataModel</k> extends <k>WLT_Model</k> {
+	<k>public</k> <c>function</c> aboutus() {
+		$data['title'] = "Welcome to 3p";
+		$this-><c>setHtml</c>('header',$data);
+	}
+}
+?&gt;               
+</div>
+                        </div>
+                    </div>
+            	
+                </div>
+             
+             
+        
+    </div>
+    
+</div>
+<!-- /.row -->
+<script>
+	$(document).ready(function(e){
+			var rContents = $("#page-wrapper").html().replace( /\$this/g, '<span class="this">$this</span>').replace( /setHtml/g, '<span class="func">setHtml</span>');
+			$("#page-wrapper").html( rContents );
+	});
+
+</script>
+
