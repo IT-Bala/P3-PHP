@@ -3,6 +3,6 @@ if(!defined('p3')){ die("Access Denied!");}
 
 # ROUTER SETTING #
 
-$GLOBALS['defaultController'] = 'Default'; # set controller name as home page;
+$GLOBALS['defaultController'] = 'home'; # set controller name as home page;
 
 $GLOBALS['defaultTheme']      = 'default'; # set theme folder name to activate theme;

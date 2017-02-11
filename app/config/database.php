@@ -4,7 +4,7 @@ if(!defined('p3')){ die("Access Denied!");}
 
 $HOSTNAME = 'localhost';
 $USERNAME = 'root';
-$PASSWORD = 'root';
+$PASSWORD = '';
 $DATABASE = '3p-php';
 
 # DATABASE CONNECTION #
