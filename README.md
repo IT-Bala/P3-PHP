@@ -25,7 +25,7 @@ class demoController extends WLT_Controller{
  }
 }
 
-Run it. : http://locahost/demo/ AND http://locahost/demo/test
+Run it. : http://locahost/demo/
 
 To load view file :
 
@@ -48,7 +48,6 @@ $db = $this->setDatabase();
 
 $sql = $db->query("");
 
-# session ,cookie,filemanager lot of extension is there we can use it.
 
 it's V.0.01
 
